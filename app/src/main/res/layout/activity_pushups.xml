@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:paddingTop="20dp"
+        android:text="开始训练吧，练出完美胸肌"
+        android:textColor="#000000"
+        android:textSize="25sp" />
+
+    <com.trampcr.pushupcounter.CounterView
+        android:id="@+id/counter_view"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_below="@+id/text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        app:backgroundColor="#000000"
+        app:textColor="#ffff00"
+        app:textSize="80sp" />
+
+    <Button
+        android:id="@+id/btn_stop"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/counter_view"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="60dp"
+        android:text="结束训练"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+</RelativeLayout>
